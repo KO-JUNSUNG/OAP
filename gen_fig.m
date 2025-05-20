@@ -1,6 +1,6 @@
 % Fig 1 3 anchors 
 % Fig 2 7 acnhors
-close all
+clear; close all; clc;
 N=3;
 xy=exp(1j*2*pi*(0:N-1)/N);
 x=real(xy);
@@ -55,8 +55,8 @@ axis ([-1 1 -1 1])
 title('Optimal anchor placement')
 %%
 figure(3)
-theta=0.5*asin(2-sqrt(3));
-phi=pi/2-theta;
+phi=0.5*asin(2-sqrt(3));
+theta=pi/2-phi;
 
 th_opt=theta;
 ph_opt=phi;
